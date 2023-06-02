@@ -28,7 +28,7 @@ app.use("/api/v1/product", productRoutes);
 
 // rest api
 app.use('*',function(req,res) {
-  res.sendFile(path.join(_dirname,'./client/build/index.html'));
+  res.sendFile(path.join(_dirname,'./build/index.html'));
 })
 const PORT = process.env.port || 8080;
 //serving the front end 
