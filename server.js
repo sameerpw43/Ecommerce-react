@@ -32,7 +32,7 @@ app.use('*',function(req,res) {
 })
 const PORT = process.env.port || 8080;
 //serving the front end 
-app.use(express.static(path.join(_)))
+
 app.listen(PORT, () => {
   console.log(`Server running on ${PORT}`);
 });
